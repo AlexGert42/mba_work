@@ -8,6 +8,9 @@ import langMenu from '@/data/translation/menu'
 import useAt from '@/components/hooks/useAt'
 import Price from '@/components/costs/Price'
 
+import {IconInfoFRDO} from '@/components/icons'
+import PopupInfo from '@/components/popups/PopupInfo'
+
 const InfoRectangle = ({ programPage = false, type = null, format = null }) => {
   const at = useAt()
   const isDiscounted =
@@ -51,7 +54,15 @@ const InfoRectangle = ({ programPage = false, type = null, format = null }) => {
           //   format={format}
           //   renderedByComponent='InfoRectangle'
           // />
-          'Заносится в ФРДО'
+
+         // 'Заносится в ФРДО'
+        <PopupInfo
+          title={'Заносится в ФРДО'}
+          icon={<IconInfoFRDO/>}
+        />
+
+
+
       }
     ],
     academyInfo: [
@@ -75,6 +86,7 @@ const InfoRectangle = ({ programPage = false, type = null, format = null }) => {
         [stls.programsPageContainer]: programPage,
         [stls.academyInfoContainer]: at.index || at.promo
       })}>
+
       {infoRectangleContent[typeOfContent].map((item, idx) => (
         <li
           key={idx + item.itemDetail}

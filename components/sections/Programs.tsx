@@ -46,6 +46,9 @@ const Programs = ({ programs }) => {
   return (
     <>
       <section className='program-options-section'>
+
+        {/*<div style={{width: '100px', height: '100px', backgroundColor: 'red'}}/> ???*/}
+
         <div className='program-options-flex'>
           <div className='program-options-left'>
             <h2>{SetString(langHeader.programsBtn)}</h2>
@@ -92,6 +95,7 @@ const Programs = ({ programs }) => {
               </li>
             </ul>
           </div>
+
           <div className='program-options-right'>
             <div
               className={classNames({
@@ -101,7 +105,7 @@ const Programs = ({ programs }) => {
               <div className='top-info'>
                 <div className='prog-time'>
                   <i>
-                    <TrainingPeriod type='mini' />
+                    <TrainingPeriod type='mini'/>
                   </i>
                   <span>
                     <ProgramSubjects type='mini' sum={true} />{' '}
@@ -154,7 +158,9 @@ const Programs = ({ programs }) => {
                   />
                   <div className='price'>
                     {SetString(langMenu.price)}:{' '}
+
                     <Price discount={true} type={'mini'} format={'online'} />{' '}
+
                   </div>
                   <div className='info-list'>
                     <div className='info-flex'>

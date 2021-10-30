@@ -90,6 +90,7 @@ const PagePrograms = ({ programs, mbaTypeOfProgram, mbaFormat }) => {
         canonical={'https://moscow.mba/programs/professional/online'}
       />
 
+
       <section className={stls.jumbotronPrograms}>
         <div className={stls.generalContainer}>
           <Breadcrumbs />
