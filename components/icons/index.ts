@@ -28,6 +28,7 @@ import IconVk from '@/components/icons/IconVk'
 import IconWhatsapp from '@/components/icons/IconWhatsapp'
 import IconWhatsappAlt from '@/components/icons/IconWhatsappAlt'
 import IconSpinner from '@/components/icons/IconSpinner'
+import IconInfoFRDO from './IconInfoFRDO'
 
 export {
   IconArrowLeft,
@@ -59,5 +60,6 @@ export {
   IconVk,
   IconWhatsapp,
   IconWhatsappAlt,
-  IconSpinner
+  IconSpinner,
+  IconInfoFRDO
 }

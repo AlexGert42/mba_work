@@ -15,20 +15,14 @@ type PopupInfoPropsType = {
 
 
 const stylesPopup = {
-    backgroundColor: '#fff',
-    padding: '20px',
-    borderRadius: 0,
-    boxShadow: '0px 0px 15px rgba(0, 0, 0, 0.1)'
+  backgroundColor: '#fff',
+  padding: '20px',
+  borderRadius: 0,
+  boxShadow: '0px 0px 15px rgba(0, 0, 0, 0.1)'
 }
 
 
-
-
-const PopupInfo: React.FC<PopupInfoPropsType> = ({
-                                                     title,
-                                                     content
-                                                 }
-) => {
+const PopupInfo: React.FC<PopupInfoPropsType> = ({title, content }) => {
 
     const testRef: any = useRef()
 
@@ -90,7 +84,6 @@ const PopupInfo: React.FC<PopupInfoPropsType> = ({
                 </div>
             </Popup>
         </div>
-    )
-}
+    )}
 
 export default PopupInfo

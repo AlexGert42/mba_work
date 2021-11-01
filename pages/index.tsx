@@ -18,6 +18,8 @@ import { apiProgramsReqUrl, backendUrl } from '@/config/index'
 //
 
 const Home = ({ programs }) => {
+
+  console.log(programs)
   return (
     <>
       <NextSeo
@@ -41,6 +43,7 @@ const Home = ({ programs }) => {
         <CorporateClients />
 
         <Programs programs={programs} />
+
         <Executive />
 
         <ContactUs />
@@ -53,6 +56,7 @@ export async function getStaticProps() {
   const res = await fetch(`${backendUrl}${apiProgramsReqUrl}`)
   const { data } = await res.json()
 
+
   return {
     props: {
       programs: data
@@ -61,3 +65,6 @@ export async function getStaticProps() {
 }
 
 export default Home
+
+
+
